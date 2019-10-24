@@ -4,35 +4,38 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/fullpage.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Fredericka+the+Great|Indie+Flower|Righteous|Rock+Salt|Schoolbell&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="css/jquery.fullPage.css">  -->
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/fullpage.js"></script>
     </head>
+
     <header>
-        <nav id="navbar">
-            <a href="#home" class="navBt">Home</a>
-            <a href="#aboutme" class="navBt">About Me</a>
-            <a href="#skill" class="navBt">Skills</a>
-            <a href="#groupproject" class="navBt">Group Project</a>
-            <a href="#individualproject" class="navBt">Other Project</a>
-            <a href="#home" id="navimg" class="navBt">
-                <img src="" alt="">
+        <nav>
+            <a href="#home" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Home</h3></a>
+            <a href="#aboutme" class="navBt hvr-icon-hang "><h3 class= "hvr-icon">About Me</h3></a>
+            <a href="#skill" class="navBt hvr-icon-hang" ><h3 class= "hvr-icon">Skills</h3></a>
+            <a href="#groupproject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Group Project</h3></a>
+            <a href="#individualproject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Team Project</h3></a>
+            <a href="#home" id="navimg" class="navBt"></a>
             </a>
         </nav>
     </header>
-    <body>
+
+    <body> 
         <div id="fullpage">
-            <div id="home" class = "fp-section">
-                <img src="images/1.jpg" alt="homepage background">
+            <div id="home" class = "fp-section active">
                 <div class = "content">
-                    <h1>Hi, I'm Aubrey Yu</h1>
-                    <h2>
-                        Master of Information Technology student. Welcome to my portfolio!
-                    </h2>
+                    <div class="info">
+                        <h1>Hey, This is Aubrey Yu!</h1>
+                        <p>
+                            Master of Information Technology student. Welcome to my portfolio!
+                        </p> 
+                    </div>
                 </div>
             </div>
-            <div id="aboutme" class="fp-section active"> 
-                <img src="images/aboutme.jpg" alt="about me background page">
+            <div id="aboutme" class="fp-section"> 
+                <img id="selfie" src="images/selfie.jpg" alt="selfie">
             </div>
             <div id="skill" class="fp-section">
             </div>
@@ -49,19 +52,19 @@
         <nav id = "fp-nav" class="fp-right">
             <ul>
                 <li>
-                    <a href=""><span></span></a>
+                    <a href="#home"><span></span></a>
                 </li>
                 <li>
-                    <a href=""><span></span></a>
+                    <a href="#aboutme"><span></span></a>
                 </li>
                 <li>
-                    <a href=""><span></span></a>
+                    <a href="#skill"><span></span></a>
                 </li>
                 <li>
-                    <a href=""><span></span></a>
+                    <a href="##groupproject"><span></span></a>
                 </li>
                 <li>
-                    <a href=""><span></span></a>
+                    <a href="#individualproject"><span></span></a>
                 </li>
             </ul>
         </nav>
