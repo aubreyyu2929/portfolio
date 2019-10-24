@@ -2,27 +2,80 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/fullpage.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/jquery.fullPage.css">  -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/fullpage.js"></script>
     </head>
+    <header>
+        <nav id="navbar">
+            <a href="#home" class="navBt">Home</a>
+            <a href="#aboutme" class="navBt">About Me</a>
+            <a href="#skill" class="navBt">Skills</a>
+            <a href="#groupproject" class="navBt">Group Project</a>
+            <a href="#individualproject" class="navBt">Other Project</a>
+            <a href="#home" id="navimg" class="navBt">
+                <img src="" alt="">
+            </a>
+        </nav>
+    </header>
     <body>
-        <section class= "slide1">
+        <div id="fullpage">
+            <div id="home" class = "fp-section">
+                <img src="images/1.jpg" alt="homepage background">
+                <div class = "content">
+                    <h1>Hi, I'm Aubrey Yu</h1>
+                    <h2>
+                        Master of Information Technology student. Welcome to my portfolio!
+                    </h2>
+                </div>
+            </div>
+            <div id="aboutme" class="fp-section active"> 
+                <img src="images/aboutme.jpg" alt="about me background page">
+            </div>
+            <div id="skill" class="fp-section">
+            </div>
+            <div id= "groupproject" class="fp-section">
+                <div class="fp-slide"> 
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="fp-slide"> Slide 2 </div>
+                    <div class="fp-slide"> Slide 3 </div>
+                    <div class="fp-slide"> Slide 4 </div>
+            </div>
+            <div id= "individualproject" class="fp-section">Some section</div>
+        </div>
+        <nav id = "fp-nav" class="fp-right">
+            <ul>
+                <li>
+                    <a href=""><span></span></a>
+                </li>
+                <li>
+                    <a href=""><span></span></a>
+                </li>
+                <li>
+                    <a href=""><span></span></a>
+                </li>
+                <li>
+                    <a href=""><span></span></a>
+                </li>
+                <li>
+                    <a href=""><span></span></a>
+                </li>
+            </ul>
+        </nav>
 
-        </section>
+        
     </body>
 
-    <nav class = "fp-slidesNav">
-        <ul>
-            <li>
-                <a href=""><span></span></a>
-            </li>
-            <li>
-                <a href=""><span></span></a>
-            </li>
-            <li>
-                <a href=""><span></span></a>
-            </li>
-            <li>
-                <a href=""><span></span></a>
-            </li>
-        </ul>
-    </nav>
+   
+    <footer>
+        
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage()
+            });
+        </script>
+    </footer>
 </html>
