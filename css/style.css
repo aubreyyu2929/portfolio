@@ -10,11 +10,13 @@
     right: 0;
     margin: auto;
     text-align: center;
-    top: 50%;
+    top: 30%;
     overflow: hidden;
     padding-bottom: 20px;
-
+    font-family: 'Arvo';
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
+
 
 #whoAmI{
     text-transform: uppercase;
@@ -23,8 +25,10 @@
     border: 2px solid white;
     background: #3a4a51;
     padding: 2px 8px;
+    font-family: 'Arvo';
     overflow: hidden;
 }
+
 
 #selfie{
     width: 125px;
@@ -37,14 +41,15 @@
 header{
     position: absolute;
     z-index: 2;
+    margin: auto;
 }
 
 #navBar{
-    /* display: flex; */
     background: transparent;
     width:100%;
     transition: 0.5s ease-in-out;
     flex-direction: row;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -55,7 +60,20 @@ header{
     font-size: 1.0em;
     margin:0.1em;
     padding:1em;
+    text-align: center;
     font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+
+#navimg{
+    font-family:'Schoolbell';
+    font-size: 2em;
+    position:absolute;
+    fill: "black";
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left:40em;
 }
 
 .navBt:hover{
