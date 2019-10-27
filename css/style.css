@@ -16,7 +16,47 @@
     font-family: 'Arvo';
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
+.info h1{
+  font-size: 3.5em;
+}
 
+/*Hover refer https://codepen.io/tsimenis/pen/BKdENX*/
+.info span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.info span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  margin-top: -0.5px;
+  background: #acb5a0;
+}
+
+.info span:before {
+  left: -2.5px;
+}
+.info span:after {
+  right: 2.5px;
+  background: #acb5a0;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.info span:hover:before {
+  background: #3aacb5;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.info span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
 
 #whoAmI{
     text-transform: uppercase;
@@ -29,13 +69,22 @@
     overflow: hidden;
 }
 
+#myself p{
+  text-align: start;
+}
+#aboutme .content{
+  position: absolute;
+  margin:300px;
+  top:-10%;  
+}
+/*about me */
+#aboutme{
+  background: linear-gradient( #fff 30%, #D2D5CE 70%);
+}
 
 #selfie{
     width: 125px;
-    float: left;
     border-radius: 100%;
-    justify-content: center;
-    display: flex;
 }
 
 header{
@@ -80,22 +129,156 @@ header{
     color: #3a4a51;
 }
 
+
+
 /* background */
 #home{
-    background-image: url("/images/3.jpg");
+    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-1.2.1&auto=format&fit=crop&w=955&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#aboutme{
-    background-image: url("/images/2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Group Project Part*/
+#groupproject{
+    background: linear-gradient( #f5f1ea 50%,  #D7BFAE 50%);
 }
 
+/* Timeline */
+.fp-slide h1, p,h2,h3,i{
+  text-align: center;
+}
 
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin:0 50px;
+}
+
+.part p{
+  padding:10px;
+  text-align: start;
+}
+
+.part a{
+  text-decoration: none;
+  color: #3a4a51;
+}
+
+.a .referenceimg{
+  width: 400px;
+}
+
+.b .content, #aboutme .content{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.b .referenceimg{
+  width:500px;
+}
+
+.imgdiv{
+  text-align:center;
+}
+
+#timeline {
+  background-color: lighten(#fff,100%);
+  margin-top: 100px;
+  height: 5px;
+  width: 100%;
+  top:0%;
+  position: relative;
+  box-shadow: 0 5px 1px rgba(255,255,255,1);
+}
+
+.dot {
+  box-shadow: 0 0 20px rgba(255,255,255,1) inset;
+  z-index: 99;
+  transition : 0.3s ease-in-out;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top:-15px;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dot span {
+  display: inline-block;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.dot:nth-child(1){
+    left: 10.0%;
+    background-color: #D2D5CE;
+}
+.dot:nth-child(2){
+    left: 20.0%;
+    background-color: #D2D5CE;
+}
+.dot:nth-child(3){
+    left: 30.0%;
+    background-color: #D2D5CE;
+}
+.dot:nth-child(4){
+  left: 45.0%;
+  background-color: #D2D5CE;
+}
+.dot:nth-child(5){
+  left: 55.0%;
+  background-color: #D2D5CE;
+}
+
+.dot:nth-child(6){
+  left: 65.0%;
+  background-color: #D2D5CE;
+}
+
+.dot:nth-child(7){
+  left: 80.0%;
+  background-color: #D2D5CE;
+}
+
+.dot:nth-child(8){
+  left: 90.0%;
+  background-color: #D2D5CE;
+}
+  
+.dot:hover {
+  transform: scale(1.2);
+}
+
+#timeline article {
+  display: none;
+  position: relative;
+  top: 30px;
+  max-width : 960px;
+  background-color: #fff;
+  padding: 20px;
+  margin: auto;}
+
+#timeline h2 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 10px;
+  border-bottom: solid #111 2px;
+  margin-bottom: 20px;
+}
+
+#timeline h3{
+  font-size:1rem;
+}
+
+ 
 
 
 /*!
@@ -298,4 +481,23 @@ header{
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
+}
+
+/*side nav hover*/
+li .tips{
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left:50%;
+  margin-left:-100px;
+  color: black;
+  text-align: center;
+  margin-right:10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+li:hover .tips{
+  visibility: visible;
 }

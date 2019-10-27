@@ -42,6 +42,7 @@ html.fp-enabled,
     display: table;
     table-layout:fixed;
     width: 100%;
+
 }
 .fp-tableCell {
     display: table-cell;
@@ -60,7 +61,7 @@ html.fp-enabled,
     -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 90%;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -73,13 +74,20 @@ html.fp-enabled,
 .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 20px 80px 20px 0;
+    border-color: transparent #676b52 transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-width: 20px 0 20px 80px;
+    border-color: transparent transparent transparent #b2bab6;
+}
+
+.fp-controlArrow.fp-prev:hover{
+    border-color: transparent #b2bab6 transparent transparent;
+}
+.fp-controlArrow.fp-next:hover{
+    border-color: transparent transparent transparent #676b52;
 }
 .fp-scrollable {
     overflow: hidden;
