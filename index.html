@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/fullpage.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Fredericka+the+Great|Indie+Flower|Righteous|Rock+Salt|Schoolbell&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/fullpage.js"></script>
         <title>Aubrey's portfolio</title>
@@ -22,7 +23,7 @@
         <nav>
             <a href="#home" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Home</h3></a>
             <a href="#aboutme" class="navBt hvr-icon-hang "><h3 class= "hvr-icon">About Me</h3></a>
-            <a href="#skill" class="navBt hvr-icon-hang" ><h3 class= "hvr-icon">Skills</h3></a>
+            <a href="#Deisgnep" class="navBt hvr-icon-hang" ><h3 class= "hvr-icon">Deisgn Exploration</h3></a>
             <a href="#groupproject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Group Project</h3></a>
             <a href="#individualproject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">reflection</h3></a>
             <a href="#home" id="navimg" class="navBt hvr-icon-hang"><svg><text x=0 y=30 >Aubrey</text></svg></a>
@@ -54,115 +55,269 @@
                         <p>I was born in Shanghai, China, but now I live in Brisbane where I study in my master’s degree at University of Queensland. </p>
                         <P>My bio is <q>“what I cannot create, I do not understand.”</q> Keep improving on everything! </P>
                     </div>
+                    <div id="contact">
+                        <p><b>Email: </b>yuyu.aubrey@gmail.com</p>
+                        <p><b>Phone: </b>0468688999</p>
+                    </div>
                 </div>
             </div>
-            <div id="skill" class="fp-section">
+
+            <div id="designep" class="fp-section">
+                <div class="fp-scrollable">
+                    <div class="fp-scroller">
+                        <div class="page-container">
+                            <h1>Design Exploration</h1>
+                            <div class="box">
+                                <h2>Overview</h2>
+                                <p>We need produce a concept base on SLQ database and create visual presentation of our design concept by poster. Also, we need present our design concept by pitch, using the poster as material to support.</p>
+                                <h2>Idea Development</h2>
+                            </div>
+                            <div class="slideshow-container">
+                                <div class="myslides ani">
+                                    <img src="images/dx.contact.jpg" class="myImg">
+                                    <div class="text">contact notes</div>
+                                </div>
+                                <div class="myslides ani">
+                                    <img src="images/dx.initialidea.png" class="myImg">
+                                    <div class="text">contact notes</div>
+                                </div>
+                                <div class="myslides ani">
+                                    <img src="images/dx.initialidea 2.jpg" class="myImg">
+                                    <div class="text">contact notes</div>
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="slides-prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="slides-next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="slidedot" onclick="currentSlide(1)"></span>
+                                <span class="slidedot" onclick="currentSlide(2)"></span>
+                                <span class="slidedot" onclick="currentSlide(3)"></span>
+                            </div>  
+                            <div class="box">
+                                <h2>My Design Concept</h2>
+                                <h3>Title: Don't be in the dark</h3> 
+                                <p><b>Purpose: </b>It is a web-based edutainment which can teach teenagers the history of Australia mineral and safety instruction of mine.</p>
+                                <h3>Audience</h3>
+                                <p><b>Primary Audience: </b>14-18 years old, Australian residents who are interested in the mineral industry or history.</p>
+                                <p><b>Secondary Audience: </b>Teachers/ headmaster/kids’ parent who wants to know the detail of the website and will recommend primary audience to use it.  </p>
+                                <h3>interactivity</h3>
+                                <p>
+                                    <li>I use the interactive map and let the user collect the mineral resources which just like the fun of collecting cards.</li>
+                                    <li>Gestural interaction by stretching and moving map. During the process, the audience can explore Australia Map, and in this process, they can learn the history of Australia Mineral industry typical 2-finger pinch gesture to zoom in and out</li>
+                                    <li>Otherwise, they can also post a question on the Forum, and students or others can reply to the question.</li>
+                                    <li>The dataset can also be improved by others who can add the information which is not complete.</li>
+                                </p>
+                                <h3>SLQ database</h3>
+                                <p>Dataset: State Library of Queensland - Queensland mining accidents 1882-1945</p>
+                                <p>
+                                    Other Datasets:<a href="https://data.qld.gov.au/dataset/queensland-mining-and-exploration-tenure-series">Queensland mining and exploration tenure series </a>
+                                </p>                                        
+                            </div>
+                            <div class="box">
+                                <h2>Poster</h2>
+                                <p>After I develped my idea, I started doing my poster and prepare my pitch, because the poster is used to support pitch, I add four low fidelity concept sketches of my concept design to present my purpose.</p>
+                                <div class="imgdiv">
+                                    <img src="images/dx.poster.png" alt="Poster">
+                                </div>
+                            </div>
+                            <div class="box">
+                                <h2>Materials</h3>
+                                <div id="low-fidelity">
+                                    <div class="imgdiv">
+                                        <img src="images/dx.1.png" alt="">
+                                        <p>Home Page</p>
+                                    </div>
+                                    <div class="imgdiv">
+                                        <img src="images/dx.2.png" alt="">
+                                        <p>Description of mines</p>
+                                    </div>    
+                                    <div class="imgdiv">
+                                        <img src="images/dx.3.png" alt="" height="340px">
+                                        <p>Search Page</p>
+                                    </div>    
+                                    <div class="imgdiv">
+                                        <img src="images/dx.4.png" alt="">
+                                        <p>mineral resource collection</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="box">
+                                <h2>Reflection</h2>
+                                <p> I think I was successful in this accessment although I didn't get a very high mark. I fully prepared the pitch and design the poster. Finally, I introduced my design concept for the audience clearly. I enjoy the whole process that I create and develop my concept design  </p>
+                                <p>I get the feedback that "More research needed to outline the problem space and the key audience.  This is generally a search engine and you need to be more innovative." In my opinions, I use treasure game of collecting mineral resource in QLD state to attract people discovery mineral history of queensland. I think the idea is innovative and I deserve a higher grade actually. And I also did interviews with target users to ask if they like this idea, which received a lot postive feedbacks </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id= "groupproject" class="fp-section">
-                <div class="fp-slide"> 
+            
+            <div id= "timelinepage" class="fp-section">
+                <h1>Timeline</h1>
+                <h2>What I have done in this course</h2>
+                <div id="timeline">
+                    <div class="dot" id="one">
+                        <span></span>
+                        <h3>Week 5</h3>
+                    </div> 
+                    <div class="dot" id="two">
+                        <span></span>
+                        <h3>Week 6</h3>
+                    </div>
+                    <div class="dot" id="three">
+                        <span></span>
+                        <h3>Week 7</h3>
+                    </div>
+                    <div class="dot" id="four">
+                        <span></span>
+                        <h3>Week 8</h3>
+                    </div>
+                    <div class="dot" id="five">
+                        <span></span>
+                        <h3>Week 9</h3>
+                    </div>
+                    <div class="dot" id="six">
+                        <span></span>
+                        <h3>Week 10</h3>
+                    </div>
+                    <div class="dot" id="seven">
+                        <span></span>
+                        <h3>Week 11</h3>
+                    </div>
+                    <div class="dot" id="eight ">
+                        <span></span>
+                        <h3>Week 12</h3>
+                    </div>
+                    <div class="inside"></div>  
+                </div>   
+                
+                <div class="what-i-did one">
+                    <h2>Week 5</h2>
+                    <p>I uploaded my poster and did pitch in the workshop. At the same time, I also watch my classmates' work and listen to their pitch, which inspires me. I saw a database I didn't notice before. It is a database record library and branch in QLD, and it also recorded the latitude, longitude, and open time and so on. I also saw many other topics such as fishing, travel, aboriginal language, game, map and so on.</p>
+                    <p>I did the pitch on Tuesday and my performance let me realize I am easy to be nervous when I make a speech to people. And I also compare my work to others, I think I still have a lot of things need to be improved.</p>
+                </div>   
+                <div class="what-i-did two">
+                    <h2>Week 6</h2>
+                    <p>In this week's contact, I find my team and my favourite project wanting to do.</p>
+                    <p>On the contact, we decided an additional meeting time this week, and to make a schedule of the proposal. As a team leader, I have a little bit of pressure. I created a group folder on google drive and shared link before the meeting. I also decided to use Trello as a tool to organize our project and allocate tasks.</p>
+                </div>      
+                <div class="what-i-did three">
+                    <h2>Week 7</h2>
+                    <p>I created a google drive and invited all team members in. Before the meeting, I will write an agenda which include meeting time/venue, meeting objectives, and who attend the meeting. In the meeting objectives, I will list all the contents we need to discuss and may face in the next couple of weeks</p>
+                    <p>Follow the agenda, all team member can talk about their opinions and ideas, then we can edit the file together and put the conclusion of ideas in the file. After this step, we will also schedule what we need to finish this week in the Trello.</p>
+                    <p>In this week, I did a online survey to research if our project can attract our target audience (<a href="https://forms.gle/PPQejNYLexTqxhGi7" target="_blank">Online survey</a>)</p>
+                </div>   
+                <div class="what-i-did four">
+                    <h2>Week 8</h2>
+                    <p>In this week, our team has start to write proposal, and I was mainly in charge of eventually revision, document design and content of Target Audience, purpose, Work as a team, background inspiration, research and SWOT. </p>
+                    <p>For the first group pitch, I also take in charge of the power point design and content edit</p>
+                </div>   
+                <div class="what-i-did five">
+                    <h2>Week 9</h2>
+                    <p>In this week, we've set up our prototype on uqclound, and I am responsible for the demo pitch, and wrote feedback questions and MVP (- filtering library which is nearest by you )of our project</p>
+                    <p>Firstly, we discussed what is our business objective of the major project. We are doing the Brisbane Reading Spots which is a web-based application can help users find a suitable place for study and work. We also hope it can become a C2C platform finally, and it can related the merchants with customers. We are a platform produce searching service and a platform maintains and update merchants information.
+
+                            Then we start to think about what is our core functionality. After discussion, we all think our objectives are our core functionalities. 1. We need to filter a good study place for users according to their location and favorite. 2. We need to engage C2C interaction, for example, users can rank on each reading spots and they can also share it even if add a secret place in this website. 3. Using SLQ API to load library information on our website.</p>
+                </div>   
+                <div class="what-i-did six">
+                    <h2>Week 10</h2>
+                    <p>In this week, I am the speech of the demo pitch, and I feel I can't fully explain our demo and ideas because I did't control time well</p>
+                    <p>After this week contact, we collected ours feedback and they recommend us, we should change the thme color of our navigation, because the color give people a sense of academic </p>
+                    <p> Thus, I decide make the theme color more light after discussing with my team member</p>
+                    <p>Theme color: #59AEA9, #BECCD5, #3d9cc</p>
+                </div>   
+                <div class="what-i-did seven">
+                    <h2>Week 11</h2>
+                    <p>This week, I feel the time is limited, and we still have a lot of things didn't realzied on our website. For example, we want to do a recommendation options of libraries that is nearby the library was clicked by users in library information page</p>
+                    <p>And after I saw our website on the zone, and test it by mobile phone, and I find it is not easy to use on mobile, then I decide to change it from mobile first to website, which is easy for our show this in the trade show</p>
+                    <p>Also, I start help our coders type the css and html code with them, and I take charge of beautify website and I change the navigation bar layout in this week</p>
+                </div>   
+                <div class="what-i-did eight">
+                    <h2>Week 12</h2>
+                    <p>This week, I still write code of css and html to beautify all pages of our website. I also found some bug of our website, which I debugged with my two coders.</p>
+                    <p>I was also responsble for posters deisgn with my deisnger, and write the report of responses, project challenges, reflections, improvements, generation of the document and document design. We also prepare name card and some snacks for trade show. </p>
+                </div>   
+
+
+            </div>
+            
+     
+            <div id= "MajorProject" class="fp-section">
+                <div class="fp-slide" id="projecthome">
                     <h1>Group Project: Brisbane Reading Spots</h1>
                     <h2>Team: Expecto Patronumn</h2>
                     <p><b>My responsibilities:</b> Leader/ part of Designer and part of coder</p>
-                    <div id="timeline">
-                        <div class="dot" id="one">
-                            <span></span>
-                            <h3>Week 6</h3>
-                        </div> 
-                        <div class="dot" id="two">
-                            <span></span>
-                            <h3>Week 7</h3>
-                        </div>
-                        <div class="dot" id="three">
-                            <span></span>
-                            <h3>Week 8</h3>
-                        </div>
-                        <div class="dot" id="four">
-                            <span></span>
-                            <h3>Week 9</h3>
-                        </div>
-                        <div class="dot" id="five">
-                            <span></span>
-                            <h3>Week 10</h3>
-                        </div>
-                        <div class="dot" id="six">
-                            <span></span>
-                            <h3>Week 11</h3>
-                        </div>
-                        <div class="dot" id="seven">
-                            <span></span>
-                            <h3>Week 12</h3>
-                        </div>
-                        <div class="dot" id="eight ">
-                            <span></span>
-                            <h3>Week 13</h3>
-                        </div>
-                        <div class="inside"></div>  
-                    </div>
-                              
-                    <div class="fp-slide" id="partA"> 
-                        <article class='part a'>
-                            <h2>Part A: Proposal</h2>
-                            <h3><i>Friday, 13rd September</i></h3>
-                            <h3>What I produced? And Why?</h3>
-                            <div class ="content">
-                                <div>
-                                    <p>
-                                        In week 6, I generate my team in contact with the topic of Library. I suggested we should do a place recommendation site like Zomato, but it is focused on reading spots, after bringing my group members two basic ideas together.   
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>After that, I wrote the details in team charter that include our meeting time, communication response time. Then I created a folder in google drive to share documents and sources for our group members and I also create a Trello board to allocate the task to my team members. 
-                                    </p>
-                                    <img src="images/trello.jpg" alt="trello" class="referenceimg">
-                                </div>
-                                <div>
-                                    <p>I will also create a team agenda before meeting each time to outline all the task we need to discuss or finish in the week. </p>
-                                    <p><a href="https://drive.google.com/drive/folders/1wo1WXHqw8RV34qSyZVNnxd6jG7HZcbwB?usp=sharing"> Group Agenda</a>
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        In part A (Proposal), I was mainly in charge of the research, Inspiration, and working as a team part and team parts, also, I integrated all parts of the content. I also did the document design in part A.
-                                    </p>
-                                    <p><a href="https://drive.google.com/file/d/1CpU1L512gCxybIxdPRbJ5VHF3OnM33bS/view?usp=sharing">Proposal</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="fp-slide" id="partB"> 
-                        <article class='part b'>
-                            <h2>Part B: Pitch</h2>
-                            <h3><i>Friday, 27th September</i> </h3> 
-                            <h3>What I produced? And Why?</h3>          
-                            <div class="content">
-                                <p>In part B, I mainly in charge of writing the pitch contents, and I also told our designer how I want to present the project, let her do a video demo for this pitch. After discussing and researching technical, we decided our minimal value product in this pitch, and I also write the feedback question for users. </p>
-                                <div class="imgdiv">
-                                    <a href="https://drive.google.com/file/d/1DyNhKUE-MNTGRLYo6GQ4nUqx5QnNg2e7/view?usp=sharing"><img src="images/pitch.jpg" alt="pitch" class="referenceimg"></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="fp-slide" id="partC"> 
-                        <article class='part c'>
-                            <h2>Part C: Report</h2>
-                            <h3><i>Monday, 21st October</i></h3>
-                            <h3>What I produced? And Why?</h3>
-                            <div class="content">
-                                <p>In Part C, we divided it into three parts – report, website, and trade show. </p>
-                                <p>For the report, I am mainly responsible for responses, project challenges, reflections, improvements, generation of the document and document design. </p>
-                                <p>For the website, I mainly take charge of design on the general construction of the website and wrote CSS and HTML to beautify our website page. </p>
-                                <p>For the Trade Show, I design the poster and prepare the trade show with my team members. </p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="fp-slide" id="answer">
-                        <article>
-                            <h1>Reflection on Part A, Part B and Part C</h1>
-                        </article>
-                    </div>
+                </div>
+                <div class="fp-slide" id="projectinfo">
 
-            </div>
-        </div>
+                </div>
+                <div class="fp-slide" id="partA"> 
+                    <article class='part a'>
+                        <h2>Part A: Proposal</h2>
+                        <h3><i>Friday, 13rd September</i></h3>
+                        <h3>What I produced? And Why?</h3>
+                        <div class ="content">
+                            <div>
+                                <p>
+                                    In week 6, I generate my team in contact with the topic of Library. I suggested we should do a place recommendation site like Zomato, but it is focused on reading spots, after bringing my group members two basic ideas together.   
+                                </p>
+                            </div>
+                            <div>
+                                <p>After that, I wrote the details in team charter that include our meeting time, communication response time. Then I created a folder in google drive to share documents and sources for our group members and I also create a Trello board to allocate the task to my team members. 
+                                </p>
+                                <img src="images/trello.jpg" alt="trello" class="referenceimg">
+                            </div>
+                            <div>
+                                <p>I will also create a team agenda before meeting each time to outline all the task we need to discuss or finish in the week. </p>
+                                <p><a href="https://drive.google.com/drive/folders/1wo1WXHqw8RV34qSyZVNnxd6jG7HZcbwB?usp=sharing" target="_blank"> Group Agenda</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    In part A (Proposal), I was mainly in charge of the research, Inspiration, and working as a team part and team parts, also, I integrated all parts of the content. I also did the document design in part A.
+                                </p>
+                                <p><a href="https://drive.google.com/file/d/1CpU1L512gCxybIxdPRbJ5VHF3OnM33bS/view?usp=sharing" target="_blank">Proposal</a>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <div class ="moreinfo"><a href="">more info</a></div>
+                </div>
+
+                <div class="fp-slide" id="partB"> 
+                    <article class='part b'>
+                        <h2>Part B: Pitch</h2>
+                        <h3><i>Friday, 27th September</i> </h3> 
+                        <h3>What I produced? And Why?</h3>          
+                        <div class="content">
+                            <p>In part B, I mainly in charge of writing the pitch contents, and I also told our designer how I want to present the project, let her do a video demo for this pitch. After discussing and researching technical, we decided our minimal value product in this pitch, and I also write the feedback question for users. </p>
+                            <div class="imgdiv">
+                                <a href="https://drive.google.com/file/d/1DyNhKUE-MNTGRLYo6GQ4nUqx5QnNg2e7/view?usp=sharing" target="_blank"><img src="images/pitch.jpg" alt="pitch" class="referenceimg"></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="fp-slide" id="partC"> 
+                    <article class='part c'>
+                        <h2>Part C: Report</h2>
+                        <h3><i>Monday, 21st October</i></h3>
+                        <h3>What I produced? And Why?</h3>
+                        <div class="content">
+                            <p>In Part C, we divided it into three parts – report, website, and trade show. </p>
+                            <p>For the report, I am mainly responsible for responses, project challenges, reflections, improvements, generation of the document and document design. </p>
+                            <p>For the website, I mainly take charge of design on the general construction of the website and wrote CSS and HTML to beautify our website page. </p>
+                            <p>For the Trade Show, I design the poster and prepare the trade show with my team members. </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="fp-slide" id="answer">
+                    <article>
+                        <h1>Reflection on Part A, Part B and Part C</h1>
+                    </article>
+                </div>
+            </div>    
+
             <div id= "reflection" class="fp-section">Some section</div>
         </div>
         <nav id = "fp-nav" class="fp-right">
@@ -177,7 +332,7 @@
                 </li>
                 <li>
                     <a href="#skill"><span></span></a>
-                    <span class="tips">Skills</span>
+                    <span class="tips">Design Exploration</span>
                 </li>
                 <li>
                     <a href="##groupproject"><span></span> </a>
@@ -189,17 +344,42 @@
                 </li>
             </ul>
         </nav>
-
-        
     </body>
 
    
     <footer>
         
         <script>
-            $(document).ready(function() {
-                $('#fullpage').fullpage()
-            });
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("myslides");
+                var dots = document.getElementsByClassName("slidedot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" act", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " act";
+            }           
         </script>
+        <script type="text/javascript" src="js/script.js"></script>
+
     </footer>
 </html>
