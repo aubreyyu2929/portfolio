@@ -189,20 +189,19 @@ header{
   width:500px;
 }
 
-.imgdiv{
+.imgdiv, .logodiv{
   text-align:center;
   margin:0 5px;
 }
 
 #timeline {
-  background-color: lighten(#fff,100%);
+  background-color: lighten(#3ca6d3,100%);
   margin-top: 100px;
   height: 5px;
   width: 100%;
   top:0%;
-
   position: relative;
-  box-shadow: 0 5px 1px rgba(255,255,255,1);
+  box-shadow: 0 5px 1px rgb(251, 245, 255);
 }
 
 .dot {
@@ -299,14 +298,12 @@ header{
 
 .what-i-did{
   /* display: none; */
-  position: absolute;
-  bottom:0%;
-  margin-top:50px;
+  position: relative;
+  margin-top:100px;
   padding:0 300px;
 }
 .what-i-did p{
   text-align: start;
-
 }
 
 
