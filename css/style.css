@@ -751,6 +751,41 @@ li:hover .tips{
 .box a{
   text-decoration:none;
 }
+
+.column h5{
+  color: #3a4a51;
+}
+
+/*reflection page*/
+#reflection{
+  background: linear-gradient( #D7BFAE 30%, whitesmoke  70%);
+}
+
+.column{
+  padding:0 5px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:40px;
+  padding:0 40px;
+}
+.row img{
+  height:100%;
+}
+
+.tradeshow{
+  text-align:center;
+  margin:0 5px;
+  top:0;
+  right: 0;
+}
+.tradeshow img{
+  width:400px;
+}
+
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
