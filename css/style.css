@@ -203,6 +203,9 @@ header{
   position: relative;
   box-shadow: 0 5px 1px rgb(251, 245, 255);
 }
+.partc:hover .imgdiv{
+  opacity: 0.3;
+}
 
 .dot {
   box-shadow: 0 0 20px rgba(255,255,255,1) inset;
@@ -224,6 +227,7 @@ header{
   top: 3px;
   left: 0;
 }
+
 .dot span {
   display: inline-block;
   margin-top: 10px;
@@ -313,6 +317,9 @@ header{
   margin: 5px;
 }
 
+#designep{
+  background: linear-gradient( #D2D5CE 30%, whitesmoke  70%);
+}
 
 
 /*!
