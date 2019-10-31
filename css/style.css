@@ -111,7 +111,7 @@ header{
 .navBt{
     text-decoration: none;
     text-transform: uppercase;
-    color: #acb5a0;
+    color: #6c9585;
     font-size: 1.0em;
     margin:0.1em;
     padding:1em;
@@ -132,6 +132,7 @@ header{
 
 .navBt:hover{
     color: #3a4a51;
+    text-decoration: none;
 }
 .fp-section h1{
   text-align: center;
@@ -783,6 +784,64 @@ li:hover .tips{
 }
 .tradeshow img{
   width:400px;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.title-break-line{
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #3a4a51;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.title-break-line:before{
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #3a4a51;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+#portfolio{
+  background: linear-gradient( #E5E4CE 30%, whitesmoke  70%);
+}
+
+.container{
+  display: flex;
+}
+
+.container .box p{
+  text-align: start;
+  margin-left:20px;
+}
+
+
+/*Footer*/
+
+footer p{
+  text-align: center;
+  margin-top:40px;
+}
+
+#contacts{
+  text-align: center;
+}
+.contactLink{
+  display: inline-block;
+  padding:5px;
+}
+.contactLink i{
+  color: #3a4a51;
+}
+
+.contactLink i:hover{
+  color: #6c9585;
 }
 
 
