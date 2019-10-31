@@ -204,8 +204,19 @@ header{
   position: relative;
   box-shadow: 0 5px 1px rgb(251, 245, 255);
 }
-.partc:hover .imgdiv{
+
+.partc .imgdiv{
   opacity: 0.3;
+  padding:10px;
+  margin-bottom:10px;
+  width:80%;
+  overflow: hidden;
+}
+
+.partc:hover .imgdiv{
+  opacity: 1;
+  transition: all 0.6s;
+  box-shadow: 5px 10px 8px 10px #888888;
 }
 
 .dot {
@@ -826,11 +837,12 @@ hr.title-break-line:before{
 
 footer p{
   text-align: center;
-  margin-top:40px;
+  margin-top:20px;
 }
 
 #contacts{
   text-align: center;
+  margin-bottom: 10px;
 }
 .contactLink{
   display: inline-block;
