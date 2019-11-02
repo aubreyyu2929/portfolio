@@ -1,4 +1,51 @@
+*{
+  margin:0;
+}
 
+/*show button*/
+.row-hidden div, .row-hidden1 div{
+  display:none;
+}
+
+.show-button{
+  position:relative;
+  left:45%;
+  margin-top:50px;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #3a4a51;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+
+.show-button:hover{
+  background: #888888;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.bouncy{
+  animation:bouncy 5s infinite linear;
+  position: relative;
+  }
+
+@keyframes bouncy {
+  0%{top:0em}
+ 40%{top:0em}
+ 43%{top:-0.9em}
+ 46%{top:0em}
+ 48%{top:-0.4em}
+ 50%{top:0em}
+ 100%{top:0em;}
+}
 .info{
     display: block;
     position: absolute;
@@ -583,75 +630,7 @@ li:hover .tips{
   right: 48%;
 }
 
-/*slides show refer https://www.w3schools.com/howto/howto_js_slideshow.asp*/
-
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
-}
-.slideshow-container img{
-  width: 100%;
-}
-.myslides{
-  display: none;
-}
-
-
-/* Next & previous buttons */
-.slides-prev, .slides-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.slides-next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.slides-prev:hover, .slides-next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #3a4a51;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* The dots/bullets/indicators */
-.slidedot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 5px 5px;
-  background-color: #3a4a51;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.act, .slidedot:hover {
-  background-color: #717171;
-}
-
+/
 /* Fading animation */
 .ani{
   -webkit-animation-name: fade;
@@ -776,15 +755,18 @@ li:hover .tips{
 .column{
   padding:0 5px;
 }
+
 .row{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin:40px;
+  margin:30px 0;
   padding:0 40px;
 }
+
 .row img{
   height:100%;
+  
 }
 
 .tradeshow{
@@ -804,8 +786,8 @@ hr.title-break-line{
   height: 30px;
   border-style: solid;
   border-color: #3a4a51;
-  border-width: 1px 0 0 0;
-  border-radius: 20px;
+  border-width: 0.5px 0 0 0;
+  border-radius: 30px;
 }
 
 hr.title-break-line:before{
@@ -816,7 +798,7 @@ hr.title-break-line:before{
   border-style: solid;
   border-color: #3a4a51;
   border-width: 0 0 1px 0;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 #portfolio{

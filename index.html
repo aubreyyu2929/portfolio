@@ -7,8 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Arvo|Fredericka+the+Great|Indie+Flower|Righteous|Rock+Salt|Schoolbell&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/fullpage.js"></script>
+        <link rel="stylesheet" href="css/jquery-gallery.css">
         <title>Aubrey's portfolio</title>
     </head>
 
@@ -24,8 +23,8 @@
         <nav>
             <a href="#home" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Home</h3></a>
             <a href="#aboutme" class="navBt hvr-icon-hang "><h3 class= "hvr-icon">About Me</h3></a>
-            <a href="#Deisgnep" class="navBt hvr-icon-hang" ><h3 class= "hvr-icon">Deisgn Exploration</h3></a>
-            <a href="#groupproject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Group Project</h3></a>
+            <a href="#designep" class="navBt hvr-icon-hang" ><h3 class= "hvr-icon">Deisgn Exploration</h3></a>
+            <a href="#MajorProject" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">Group Project</h3></a>
             <a href="#portfolio" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">portfolio</h3></a>
             <a href="#reflection" class="navBt hvr-icon-hang"><h3 class= "hvr-icon">reflection</h3></a>
             <a href="#home" id="navimg" class="navBt hvr-icon-hang"><svg><text x=0 y=30 >Aubrey</text></svg></a>
@@ -75,28 +74,15 @@
                                 <p>We need produce a concept base on SLQ database and create visual presentation of our design concept by poster. Also, we need present our design concept by pitch, using the poster as material to support.</p>
                                 <h2>Idea Development</h2>
                             </div>
-                            <div class="slideshow-container">
-                                <div class="myslides ani">
-                                    <img src="images/dx.contact.jpg" class="myImg">
-                                    <div class="text">contact notes</div>
-                                </div>
-                                <div class="myslides ani">
-                                    <img src="images/dx.initialidea.png" class="myImg">
-                                    <div class="text">contact notes</div>
-                                </div>
-                                <div class="myslides ani">
-                                    <img src="images/dx.initialidea 2.jpg" class="myImg">
-                                    <div class="text">contact notes</div>
-                                </div>
-                                <!-- Next and previous buttons -->
-                                <a class="slides-prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="slides-next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            <div class="box">
+                                <ul class="gallery-slideshow">
+                                     <li><img src="images/dx.contact.jpg" alt=""></li>   
+                                     <li><img src="images/dx.initialidea 2.jpg" alt=""></li>
+                                     <li><img src="images/dx.initialidea.png" alt=""></li>
+                                </ul>                                           
                             </div>
-                            <div style="text-align:center">
-                                <span class="slidedot" onclick="currentSlide(1)"></span>
-                                <span class="slidedot" onclick="currentSlide(2)"></span>
-                                <span class="slidedot" onclick="currentSlide(3)"></span>
-                            </div>  
+                                                                                                            
                             <div class="box">
                                 <h2>My Design Concept</h2>
                                 <h3>Title: Don't be in the dark</h3> 
@@ -392,40 +378,97 @@
                                     <div class="column imgdiv">
                                         <img src="images/intial-homeapge4.jpeg" alt="collection-page">
                                         <h5>Home page - Collection Page</h5>
-                                    </div>
-                                   
+                                    </div>                                 
                                 </div>
-                                <div class="hidden">
-                                    <div class="row">
-                                        <div class="column imgdiv">
-                                            <img src="images/initial-librarypage.jpeg" alt="Library ">
-                                            <h5>Library information Page</h5>
-                                        </div>
-                                        <div class="column imgdiv">
-                                            <img src="images/intial-eventpage.jpeg" alt="">
-                                            <h5>Event information Page</h5>
-                                        </div>
-                                        <div class="column imgdiv">
-                                            <img src="images/intitial comments.jpeg" alt="">
-                                            <h5>User information Page - collection</h5>
-                                        </div>
+
+                                <button class="show-button bouncy" id="show-button">Show More</button>
+
+                                <div class="row row-hidden">
+                                    <div class="column imgdiv">
+                                        <img src="images/initial-librarypage.jpeg" alt="Library ">
+                                        <h5>Library information Page</h5>
                                     </div>
-                                    <div class="row">
-                                        <div class="column imgdiv">
-                                            <img src="images/initial-userpage.jpeg" alt="userpage-favorite">
-                                            <h5>User Page -favorite</h5>
-                                        </div>
-                                        <div class="column imgdiv">
-                                            <img src="images/initial-userpage2.jpeg" alt="userpage-footprinter">
-                                            <h5>User-Page - Footprints</h5>
-                                        </div>
-                                        <div class="column imgdiv">
-                                            <img src="images/intial-serachpage.jpeg" alt="serach-page">
-                                            <h5>Search</h5>
-                                        </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/intial-eventpage.jpeg" alt="">
+                                        <h5>Event information Page</h5>
                                     </div>
-                                </div>  
-                                <h5>Collection article page</h5>
+                                    <div class="column imgdiv">
+                                        <img src="images/intitial comments.jpeg" alt="">
+                                        <h5>User information Page - collection</h5>
+                                    </div>
+                                </div>
+                                <div class="row  row-hidden">
+                                    <div class="column imgdiv">
+                                        <img src="images/initial-userpage.jpeg" alt="userpage-favorite">
+                                        <h5>User Page -favorite</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/initial-userpage2.jpeg" alt="userpage-footprinter">
+                                        <h5>User-Page - Footprints</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/intial-serachpage.jpeg" alt="serach-page">
+                                        <h5>Search</h5>
+                                    </div>
+                                </div>
+                                <h5>Feedback and changes in Part B</h5>
+                                <p>I listed 4 feedback questions in demo Pitch as below:</p>
+                                <p>
+                                    <li>Are you satisfied  with this search result by distance (MVP)?</li>
+                                    <li>Which part is not to facilitate to you?
+                                        </li>
+                                    <li>Is it easy to use? Does it provide a good user experience for you?
+                                        </li>
+                                    <li>Which functionalities you like the best?</li>
+                            
+                                </p>
+                                <h6>Feedbacks from users</h6>
+                                <p>1.	After we present the demo to user, some users express they feel the home (for you) page have the same function as the search page and tell us to make the two pages become distinguished. Therefore, we change the grid layout of libraries in the for you page to map displaying their location. When user click the book icon on the map, they can see the name and address of libraries.</p>
+                                <p>2.	In initial idea we intend to design the website as mobile first, but in the test progress, we find when we display the information by sql api, it is slow to open by touch screen. Users always need to click multiple times and then get a slow response. Thus, we decided to present our website by PC. And we hope it can help us easy to present our website. </p>
+                                <p>3.	Most users are satisfied with the search results and it is easy to understand our purpose of the website, although it doesn’t display the library in Queensland university because of the limitation of data. </p>
+                                <p>4.	Someone like the forum ideas, and he advised us can add a study buddy part for users to find people to study with. We love this idea, but we didn’t put it in the plan because of time bound and technical limitation. It is an improvement we can add it to our website in the future. </p>
+                                <p>In this period from part B to part C, We also met techinical problems and time limitaiton. Thus, we use some simulation page to instand of our initial idea, such as collection page, and event page. We add all information in these two page manually. Below I shown is our final product, you can compare the diffrence with initial prototype.</p>
+                                <h4>Final Product</h4>
+                                <div class="row">
+                                    <div class="column imgdiv">
+                                        <img src="images/homepage-display.png" alt="userpage-favorite">
+                                        <h5>User Page -favorite</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/homepage-library.png" alt="userpage-footprinter">
+                                        <h5>User-Page - Footprints</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/homepage-event.png" alt="serach-page">
+                                        <h5>Search</h5>
+                                    </div>
+                                </div>
+
+                                <button class="show-button" id="show-button1">Show More</button>
+
+                                <div class="row row-hidden1">
+                                    <div class="column imgdiv">
+                                        <img src="images/homepage.png" alt="home-page">
+                                        <h5>Home Page</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/serachpage.png" alt="search-info">
+                                        <h5>Search Page</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/userpage.png" alt="user-info">
+                                        <h5>User information Page</h5>
+                                    </div>
+                                </div>
+                                
+                                <div class="row row-hidden1">
+                                    <div class="column imgdiv">
+                                        <img src="images/libraryinfo.png" alt="library-info">
+                                        <h5>Library information Page</h5>
+                                    </div>
+                                    <div class="column imgdiv">
+                                        <img src="images/collectioninfo.png" alt="collection-info">
+                                        <h5>Collection article page</h5>
                                     </div>
                                     <div class="column imgdiv">
                                         <img src="images/login-page.png" alt="login-page">
@@ -563,6 +606,11 @@
                 </li>
             </ul>
         </nav>
+        <script src="Js/main.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/fullpage.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>    
+        <script src="js/jquery-gallery.js"></script>
     </body>
 
    
@@ -588,38 +636,7 @@
                     <i class="fa fa-github" style="font-size:36px"></i>
                 </a>
             </div>
-        </div>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("myslides");
-                var dots = document.getElementsByClassName("slidedot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" act", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " act";
-            }           
-        </script>
-        <script type="text/javascript" src="js/script.js"></script>
+        </div>      
 
     </footer>
 </html>

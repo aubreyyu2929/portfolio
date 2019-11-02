@@ -2,9 +2,28 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
     autoScrolling: false,
-    scrollHorizontally: true
+    // scrollHorizontally: true
+    });
+    
+    $('.gallery-slideshow').slideshow({
+        // default: 2000
+        interval: 3000,
+        // default: 500
+        width: 600,
+        // default: 350
+        height: 400
+    });
+
+   
+    $('#show-button1').click(function(){
+        $('.row-hidden1 div').slideToggle(300);
+    });
+    $('#show-button').click(function(){
+        $('.row-hidden div').slideToggle(300);
     });
  });
+
+ 
 
  
 $('.dot:nth-child(1)').click(function(){
@@ -12,6 +31,7 @@ $('.dot:nth-child(1)').click(function(){
       'width' : '10%'
     }, 500);
   });
+
 $('.dot:nth-child(2)').click(function(){
     $('.inside').animate({
         'width' : '20%'
