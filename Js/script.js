@@ -13,17 +13,17 @@ $(document).ready(function() {
         // default: 350
         height: 400
     });
-
-   
+ 
     $('#show-button1').click(function(){
         $('.row-hidden1 div').slideToggle(300);
+       
     });
+
     $('#show-button').click(function(){
-        $('.row-hidden div').slideToggle(300);
-    });
+        $('.row-hidden div').slideToggle(300);       
+    });  
  });
 
- 
 
  
 $('.dot:nth-child(1)').click(function(){
